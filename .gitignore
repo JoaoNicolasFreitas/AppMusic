@@ -1,0 +1,35 @@
+# Android / Flutter
+appmusic/build/
+appmusic/.dart_tool/
+appmusic/.flutter-plugins-dependencies
+appmusic/.pub-cache/
+appmusic/.pub/
+appmusic/android/.gradle/
+appmusic/android/local.properties
+appmusic/android/app/debug/
+appmusic/android/app/profile/
+appmusic/android/app/release/
+
+# Binaries / Large APKs (GitHub limits pushes to 100MB max)
+*.apk
+*.aab
+AppMusic-APK/*.apk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# OS / IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
