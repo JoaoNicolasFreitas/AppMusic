@@ -165,28 +165,28 @@ class DownloadResolver {
           options: [
             DownloadAudioOption(
               id: 'py_mp3_128',
-              label: '🎵 Áudio MP3 (Otimizado · Leve ~3 MB · Com Capa)',
+              label: '🎵 Áudio MP3 · 128 kbps (~3 MB)',
               downloadUrl: '$base/api/download?url=$encodedUrl&format=mp3&quality=128',
               extension: 'mp3',
               estimatedBytes: null,
             ),
             DownloadAudioOption(
               id: 'py_m4a',
-              label: '🎵 Áudio M4A / AAC (Nativo YouTube · ~3 MB · Rápido)',
+              label: '🎵 Áudio M4A · AAC (~3 MB)',
               downloadUrl: '$base/api/download?url=$encodedUrl&format=m4a',
               extension: 'm4a',
               estimatedBytes: null,
             ),
             DownloadAudioOption(
               id: 'py_mp3_192',
-              label: '🎵 Áudio MP3 (Alta Qualidade · 192 kbps · ~5 MB)',
+              label: '🎵 Áudio MP3 · 192 kbps (~5 MB)',
               downloadUrl: '$base/api/download?url=$encodedUrl&format=mp3&quality=192',
               extension: 'mp3',
               estimatedBytes: null,
             ),
             DownloadAudioOption(
               id: 'py_mp4',
-              label: '🎬 Vídeo MP4 (720p HD Otimizado · Com Capa)',
+              label: '🎬 Vídeo MP4 · 720p HD',
               downloadUrl: '$base/api/download?url=$encodedUrl&format=mp4',
               extension: 'mp4',
               estimatedBytes: null,
@@ -246,7 +246,7 @@ class DownloadResolver {
             options.add(
               DownloadAudioOption(
                 id: 'piped_audio_safe',
-                label: '🎵 Áudio M4A / AAC (Anti-Erro 403 · Alta Fidelidade)',
+                label: '🎵 Áudio M4A / AAC (~3 MB)',
                 downloadUrl: url,
                 extension: 'm4a',
                 estimatedBytes: size,
@@ -307,7 +307,7 @@ class DownloadResolver {
         options.add(
           DownloadAudioOption(
             id: 'muxed_audio_${bestMuxed.tag}',
-            label: '🎵 Áudio M4A / AAC (Anti-Erro 403 · Alta Fidelidade)',
+            label: '🎵 Áudio M4A / AAC (~3 MB)',
             downloadUrl: bestMuxed.url.toString(),
             extension: 'm4a',
             estimatedBytes: bestMuxed.size.totalBytes,

@@ -85,6 +85,7 @@ class _DownloadScreenState extends State<DownloadScreen> {
                     if (_preview?.options.isNotEmpty == true) ...[
                       const SizedBox(height: 12),
                       DropdownButtonFormField<String>(
+                        isExpanded: true,
                         initialValue: _selectedOption?.id,
                         decoration: const InputDecoration(
                           labelText: 'Formato / Resolução',
@@ -93,7 +94,11 @@ class _DownloadScreenState extends State<DownloadScreen> {
                             .map(
                               (option) => DropdownMenuItem(
                                 value: option.id,
-                                child: Text(option.label),
+                                child: Text(
+                                  option.label,
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 1,
+                                ),
                               ),
                             )
                             .toList(growable: false),
